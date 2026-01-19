@@ -434,7 +434,7 @@ Each chapter follows a consistent structure:
 
 The appendices provide quick reference guides to terminology systems, FHIR resources, the OMOP CDM, and billing code crosswalks.
 
-**Companion Repository:** All SQL queries, Python scripts, teaching datasets, and infographics from this book are available at [github.com/datagodzilla/clinical-informatics-textbook](https://github.com/datagodzilla/clinical-informatics-textbook)
+**Companion Repository:** All SQL queries, Python scripts, teaching datasets, and infographics from this book are available at [github.com/clinicalaiinsider/clinical-informatics-textbook](https://github.com/clinicalaiinsider/clinical-informatics-textbook)
 
 By the end of this book, readers will be able to trace any piece of healthcare data from its origin at the patient bedside to its ultimate use in research, operations, and quality improvement. The goal is understanding not just what the data *is*, but what it *means*.
 
