@@ -20,7 +20,7 @@
 
 ---
 
-**Clinical AI Insider**
+**Narayana Surampudi, PhD**
 
 **2026**
 
@@ -42,7 +42,7 @@
 
 ---
 
-**By Clinical AI Insider**
+**By Narayana Surampudi, PhD**
 
 ---
 
@@ -79,7 +79,7 @@
 
 ### Copyright Notice
 
-**© 2026 Clinical AI Insider. All rights reserved.**
+**© 2026 Narayana Surampudi, PhD. All rights reserved.**
 
 No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the author, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
 
@@ -448,7 +448,7 @@ This book is for everyone who has ever asked, "But what does that code actually 
 
 The exploration begins here.
 
-*Clinical AI Insider*
+*Narayana Surampudi, PhD*
 *January 2026*
 
 ---
@@ -6972,13 +6972,13 @@ This glossary provides definitions for clinical, technical, and informatics term
 
 <div align="center">
 
-## Clinical AI Insider
+## Narayana Surampudi, PhD
 
 </div>
 
 ---
 
-**Clinical AI Insider** writes about the intersection of healthcare and artificial intelligence. With expertise spanning clinical data science, healthcare informatics, and observational health research, the author focuses on bridging the gap between clinical practice and healthcare technology.
+**Narayana Surampudi, PhD** writes about the intersection of healthcare and artificial intelligence. With expertise spanning clinical data science, healthcare informatics, and observational health research, the author focuses on bridging the gap between clinical practice and healthcare technology.
 
 ### Areas of Expertise
 
