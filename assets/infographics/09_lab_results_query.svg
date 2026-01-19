@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#553c9a"/>
+      <stop offset="100%" style="stop-color:#805ad5"/>
+    </linearGradient>
+    <linearGradient id="tableHeaderGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748"/>
+      <stop offset="100%" style="stop-color:#1a202c"/>
+    </linearGradient>
+    <linearGradient id="highGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fc8181"/>
+      <stop offset="100%" style="stop-color:#feb2b2"/>
+    </linearGradient>
+    <linearGradient id="normalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9ae6b4"/>
+      <stop offset="100%" style="stop-color:#c6f6d5"/>
+    </linearGradient>
+
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f7fafc"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="url(#headerGrad)"/>
+  <text x="600" y="35" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle">LABORATORY RESULTS QUERY</text>
+  <text x="600" y="60" font-family="Arial, sans-serif" font-size="14" fill="#e9d8fd" text-anchor="middle">Maria Rodriguez — OMOP CDM MEASUREMENT Table Query Results</text>
+
+  <!-- SQL Query Box -->
+  <rect x="50" y="100" width="1100" height="140" rx="8" fill="#1a202c" filter="url(#shadow)"/>
+  <text x="70" y="125" font-family="monospace" font-size="11" fill="#68d391">-- OMOP CDM Query: Retrieve Maria's Lab Results</text>
+  <text x="70" y="145" font-family="monospace" font-size="11" fill="#90cdf4">SELECT</text>
+  <text x="95" y="163" font-family="monospace" font-size="11" fill="white">m.measurement_date, c.concept_name AS lab_test,</text>
+  <text x="95" y="181" font-family="monospace" font-size="11" fill="white">m.value_as_number, u.concept_name AS unit, m.range_low, m.range_high</text>
+  <text x="70" y="199" font-family="monospace" font-size="11" fill="#90cdf4">FROM</text>
+  <text x="115" y="199" font-family="monospace" font-size="11" fill="white">cdm.measurement m</text>
+  <text x="70" y="217" font-family="monospace" font-size="11" fill="#90cdf4">JOIN</text>
+  <text x="115" y="217" font-family="monospace" font-size="11" fill="white">vocabulary.concept c ON m.measurement_concept_id = c.concept_id</text>
+  <text x="70" y="235" font-family="monospace" font-size="11" fill="#90cdf4">WHERE</text>
+  <text x="125" y="235" font-family="monospace" font-size="11" fill="#fbd38d">m.person_id = 12345</text>
+  <text x="275" y="235" font-family="monospace" font-size="11" fill="#90cdf4">ORDER BY</text>
+  <text x="380" y="235" font-family="monospace" font-size="11" fill="white">m.measurement_date DESC;</text>
+
+  <!-- Results Table -->
+  <rect x="50" y="260" width="1100" height="400" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+
+  <!-- Table Header -->
+  <rect x="50" y="260" width="1100" height="45" rx="8" fill="url(#tableHeaderGrad)"/>
+  <rect x="50" y="295" width="1100" height="10" fill="url(#tableHeaderGrad)"/>
+
+  <!-- Column Headers -->
+  <text x="80" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Date</text>
+  <text x="195" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Lab Test (LOINC)</text>
+  <text x="480" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Value</text>
+  <text x="580" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Unit</text>
+  <text x="700" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Reference</text>
+  <text x="830" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Status</text>
+  <text x="950" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">OMOP Concept</text>
+
+  <!-- Divider lines for columns -->
+  <line x1="175" y1="260" x2="175" y2="660" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="460" y1="260" x2="460" y2="660" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="560" y1="260" x2="560" y2="660" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="680" y1="260" x2="680" y2="660" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="810" y1="260" x2="810" y2="660" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="930" y1="260" x2="930" y2="660" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Row 1 - Glucose HIGH -->
+  <rect x="51" y="306" width="1098" height="44" fill="#fff5f5"/>
+  <text x="80" y="332" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">2026-01-13</text>
+  <text x="195" y="325" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748">Glucose</text>
+  <text x="195" y="340" font-family="Arial, sans-serif" font-size="10" fill="#718096">LOINC: 2345-7</text>
+  <text x="480" y="332" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c53030">218</text>
+  <text x="580" y="332" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">mg/dL</text>
+  <text x="700" y="332" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">70-100</text>
+  <rect x="835" y="318" width="70" height="22" rx="4" fill="#c53030"/>
+  <text x="870" y="334" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">HIGH ↑</text>
+  <text x="950" y="332" font-family="Arial, sans-serif" font-size="10" fill="#805ad5">3004249</text>
+
+  <!-- Row 2 - HbA1c HIGH -->
+  <rect x="51" y="350" width="1098" height="44" fill="#fff5f5"/>
+  <text x="80" y="376" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">2026-01-13</text>
+  <text x="195" y="369" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748">HbA1c</text>
+  <text x="195" y="384" font-family="Arial, sans-serif" font-size="10" fill="#718096">LOINC: 4548-4</text>
+  <text x="480" y="376" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c53030">8.2</text>
+  <text x="580" y="376" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">%</text>
+  <text x="700" y="376" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">&lt;7.0</text>
+  <rect x="835" y="362" width="70" height="22" rx="4" fill="#c53030"/>
+  <text x="870" y="378" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">HIGH ↑</text>
+  <text x="950" y="376" font-family="Arial, sans-serif" font-size="10" fill="#805ad5">3034639</text>
+
+  <!-- Row 3 - BNP HIGH -->
+  <rect x="51" y="394" width="1098" height="44" fill="#fff5f5"/>
+  <text x="80" y="420" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">2026-01-13</text>
+  <text x="195" y="413" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748">BNP (Natriuretic Peptide)</text>
+  <text x="195" y="428" font-family="Arial, sans-serif" font-size="10" fill="#718096">LOINC: 42637-9</text>
+  <text x="480" y="420" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c53030">245</text>
+  <text x="580" y="420" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">pg/mL</text>
+  <text x="700" y="420" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">&lt;100</text>
+  <rect x="835" y="406" width="70" height="22" rx="4" fill="#c53030"/>
+  <text x="870" y="422" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">HIGH ↑</text>
+  <text x="950" y="420" font-family="Arial, sans-serif" font-size="10" fill="#805ad5">3027114</text>
+
+  <!-- Row 4 - Creatinine Normal -->
+  <rect x="51" y="438" width="1098" height="44" fill="#f0fff4"/>
+  <text x="80" y="464" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">2026-01-13</text>
+  <text x="195" y="457" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748">Creatinine</text>
+  <text x="195" y="472" font-family="Arial, sans-serif" font-size="10" fill="#718096">LOINC: 2160-0</text>
+  <text x="480" y="464" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#276749">1.0</text>
+  <text x="580" y="464" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">mg/dL</text>
+  <text x="700" y="464" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">0.6-1.2</text>
+  <rect x="835" y="450" width="70" height="22" rx="4" fill="#38a169"/>
+  <text x="870" y="466" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">NORMAL</text>
+  <text x="950" y="464" font-family="Arial, sans-serif" font-size="10" fill="#805ad5">3016723</text>
+
+  <!-- Row 5 - TSH Normal -->
+  <rect x="51" y="482" width="1098" height="44" fill="#f0fff4"/>
+  <text x="80" y="508" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">2026-01-13</text>
+  <text x="195" y="501" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748">TSH</text>
+  <text x="195" y="516" font-family="Arial, sans-serif" font-size="10" fill="#718096">LOINC: 3016-3</text>
+  <text x="480" y="508" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#276749">2.1</text>
+  <text x="580" y="508" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">mIU/L</text>
+  <text x="700" y="508" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">0.4-4.0</text>
+  <rect x="835" y="494" width="70" height="22" rx="4" fill="#38a169"/>
+  <text x="870" y="510" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">NORMAL</text>
+  <text x="950" y="508" font-family="Arial, sans-serif" font-size="10" fill="#805ad5">3019550</text>
+
+  <!-- Row 6 - Troponin Normal -->
+  <rect x="51" y="526" width="1098" height="44" fill="#f0fff4"/>
+  <text x="80" y="552" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">2026-01-13</text>
+  <text x="195" y="545" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748">Troponin I</text>
+  <text x="195" y="560" font-family="Arial, sans-serif" font-size="10" fill="#718096">LOINC: 10839-9</text>
+  <text x="480" y="552" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#276749">&lt;0.01</text>
+  <text x="580" y="552" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">ng/mL</text>
+  <text x="700" y="552" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">&lt;0.04</text>
+  <rect x="835" y="538" width="70" height="22" rx="4" fill="#38a169"/>
+  <text x="870" y="554" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">NORMAL</text>
+  <text x="950" y="552" font-family="Arial, sans-serif" font-size="10" fill="#805ad5">3022250</text>
+
+  <!-- Row 7 - Sodium Normal -->
+  <rect x="51" y="570" width="1098" height="44" fill="#f0fff4"/>
+  <text x="80" y="596" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">2026-01-13</text>
+  <text x="195" y="589" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748">Sodium</text>
+  <text x="195" y="604" font-family="Arial, sans-serif" font-size="10" fill="#718096">LOINC: 2951-2</text>
+  <text x="480" y="596" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#276749">140</text>
+  <text x="580" y="596" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">mEq/L</text>
+  <text x="700" y="596" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">136-145</text>
+  <rect x="835" y="582" width="70" height="22" rx="4" fill="#38a169"/>
+  <text x="870" y="598" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">NORMAL</text>
+  <text x="950" y="596" font-family="Arial, sans-serif" font-size="10" fill="#805ad5">3019550</text>
+
+  <!-- Row 8 - Potassium Normal -->
+  <rect x="51" y="614" width="1098" height="44" fill="#f0fff4"/>
+  <text x="80" y="640" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">2026-01-13</text>
+  <text x="195" y="633" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748">Potassium</text>
+  <text x="195" y="648" font-family="Arial, sans-serif" font-size="10" fill="#718096">LOINC: 2823-3</text>
+  <text x="480" y="640" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#276749">4.2</text>
+  <text x="580" y="640" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">mEq/L</text>
+  <text x="700" y="640" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">3.5-5.0</text>
+  <rect x="835" y="626" width="70" height="22" rx="4" fill="#38a169"/>
+  <text x="870" y="642" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">NORMAL</text>
+  <text x="950" y="640" font-family="Arial, sans-serif" font-size="10" fill="#805ad5">3023103</text>
+
+  <!-- Row Count -->
+  <rect x="50" y="658" width="1100" height="30" rx="0" fill="#edf2f7"/>
+  <text x="600" y="678" font-family="Arial, sans-serif" font-size="11" fill="#4a5568" text-anchor="middle">(8 rows returned)</text>
+
+  <!-- Summary Stats -->
+  <rect x="50" y="710" width="350" height="170" rx="10" fill="white" stroke="#c53030" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="50" y="710" width="350" height="35" rx="10" fill="#c53030"/>
+  <rect x="50" y="735" width="350" height="10" fill="#c53030"/>
+  <text x="225" y="735" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">⚠️ ABNORMAL RESULTS (3)</text>
+
+  <g font-family="Arial, sans-serif" font-size="12" fill="#2d3748">
+    <text x="70" y="775" font-weight="bold">Glucose: 218 mg/dL</text>
+    <text x="70" y="795" fill="#718096">→ Poorly controlled diabetes</text>
+    <text x="70" y="820" font-weight="bold">HbA1c: 8.2%</text>
+    <text x="70" y="840" fill="#718096">→ Above target &lt;7%</text>
+    <text x="70" y="865" font-weight="bold">BNP: 245 pg/mL</text>
+    <text x="70" y="885" fill="#718096">→ Cardiac stress from AFib</text>
+  </g>
+
+  <!-- Clinical Interpretation -->
+  <rect x="425" y="710" width="350" height="170" rx="10" fill="white" stroke="#38a169" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="425" y="710" width="350" height="35" rx="10" fill="#38a169"/>
+  <rect x="425" y="735" width="350" height="10" fill="#38a169"/>
+  <text x="600" y="735" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">✓ NORMAL RESULTS (5)</text>
+
+  <g font-family="Arial, sans-serif" font-size="12" fill="#2d3748">
+    <text x="445" y="775" font-weight="bold">Creatinine: 1.0 mg/dL</text>
+    <text x="445" y="795" fill="#718096">→ eGFR 82 - Good renal function</text>
+    <text x="445" y="820" font-weight="bold">TSH: 2.1 mIU/L</text>
+    <text x="445" y="840" fill="#718096">→ Rules out thyroid-induced AFib</text>
+    <text x="445" y="865" font-weight="bold">Troponin I: &lt;0.01 ng/mL</text>
+    <text x="445" y="885" fill="#718096">→ No acute cardiac injury</text>
+  </g>
+
+  <!-- LOINC Mapping Info -->
+  <rect x="800" y="710" width="350" height="170" rx="10" fill="white" stroke="#805ad5" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="800" y="710" width="350" height="35" rx="10" fill="#805ad5"/>
+  <rect x="800" y="735" width="350" height="10" fill="#805ad5"/>
+  <text x="975" y="735" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">🔗 TERMINOLOGY MAPPING</text>
+
+  <g font-family="Arial, sans-serif" font-size="11" fill="#2d3748">
+    <text x="820" y="770" font-weight="bold" fill="#553c9a">Source System → OMOP CDM</text>
+    <text x="820" y="795">Local Code "GLU" → LOINC 2345-7</text>
+    <text x="820" y="815">LOINC 2345-7 → OMOP 3004249</text>
+    <text x="820" y="840" font-weight="bold" fill="#553c9a">Unit Standardization</text>
+    <text x="820" y="860">mg/dL → UCUM unit_concept_id</text>
+    <text x="820" y="885" font-weight="bold" fill="#553c9a">Reference Range</text>
+    <text x="820" y="905" fill="#718096">range_low, range_high stored per test</text>
+  </g>
+</svg>

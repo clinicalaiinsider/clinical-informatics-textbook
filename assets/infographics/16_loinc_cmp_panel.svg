@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="750" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1000" height="70" fill="url(#headerGrad)"/>
+
+  <!-- Title -->
+  <text x="500" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Comprehensive Metabolic Panel (CMP) — LOINC Hierarchy</text>
+
+  <!-- Panel Header -->
+  <g filter="url(#shadow)">
+    <rect x="300" y="90" width="400" height="50" rx="10" fill="url(#panelGrad)"/>
+    <text x="500" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Comprehensive Metabolic Panel (24323-8)</text>
+  </g>
+
+  <!-- Connector lines from panel to groups -->
+  <path d="M 500 140 L 500 170 L 200 170 L 200 190" stroke="#667eea" stroke-width="2" fill="none"/>
+  <path d="M 500 140 L 500 170 L 500 190" stroke="#667eea" stroke-width="2" fill="none"/>
+  <path d="M 500 140 L 500 170 L 800 170 L 800 190" stroke="#667eea" stroke-width="2" fill="none"/>
+
+  <!-- Group 1: Glucose & Kidney -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="200" width="300" height="200" rx="10" fill="white" stroke="#10b981" stroke-width="2"/>
+    <rect x="50" y="200" width="300" height="35" rx="10" fill="#10b981"/>
+    <text x="200" y="223" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Glucose &amp; Kidney Function</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="11" fill="#374151">
+    <text x="70" y="255"><tspan font-weight="bold" fill="#10b981">Glucose</tspan> [Mass/volume] in Serum/Plasma</text>
+    <text x="310" y="255" font-family="monospace" font-size="10" fill="#6b7280">2345-7</text>
+
+    <text x="70" y="280"><tspan font-weight="bold" fill="#10b981">BUN</tspan> [Mass/volume] in Serum/Plasma</text>
+    <text x="310" y="280" font-family="monospace" font-size="10" fill="#6b7280">3094-0</text>
+
+    <text x="70" y="305"><tspan font-weight="bold" fill="#10b981">Creatinine</tspan> [Mass/volume] in Serum/Plasma</text>
+    <text x="310" y="305" font-family="monospace" font-size="10" fill="#6b7280">2160-0</text>
+
+    <text x="70" y="330"><tspan font-weight="bold" fill="#10b981">eGFR</tspan> /1.73 sq M predicted</text>
+    <text x="310" y="330" font-family="monospace" font-size="10" fill="#6b7280">98979-8</text>
+  </g>
+
+  <!-- Group 2: Electrolytes -->
+  <g filter="url(#shadow)">
+    <rect x="370" y="200" width="260" height="200" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="370" y="200" width="260" height="35" rx="10" fill="#f59e0b"/>
+    <text x="500" y="223" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Electrolytes</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="11" fill="#374151">
+    <text x="390" y="255"><tspan font-weight="bold" fill="#f59e0b">Sodium</tspan> [Moles/vol] Serum/Plasma</text>
+    <text x="590" y="255" font-family="monospace" font-size="10" fill="#6b7280">2951-2</text>
+
+    <text x="390" y="280"><tspan font-weight="bold" fill="#f59e0b">Potassium</tspan> [Moles/vol] Serum/Plasma</text>
+    <text x="590" y="280" font-family="monospace" font-size="10" fill="#6b7280">2823-3</text>
+
+    <text x="390" y="305"><tspan font-weight="bold" fill="#f59e0b">Chloride</tspan> [Moles/vol] Serum/Plasma</text>
+    <text x="590" y="305" font-family="monospace" font-size="10" fill="#6b7280">2075-0</text>
+
+    <text x="390" y="330"><tspan font-weight="bold" fill="#f59e0b">CO₂</tspan> [Moles/vol] Serum/Plasma</text>
+    <text x="590" y="330" font-family="monospace" font-size="10" fill="#6b7280">2028-9</text>
+
+    <text x="390" y="355"><tspan font-weight="bold" fill="#f59e0b">Calcium</tspan> [Mass/vol] Serum/Plasma</text>
+    <text x="590" y="355" font-family="monospace" font-size="10" fill="#6b7280">17861-6</text>
+  </g>
+
+  <!-- Group 3: Liver & Protein -->
+  <g filter="url(#shadow)">
+    <rect x="650" y="200" width="300" height="200" rx="10" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <rect x="650" y="200" width="300" height="35" rx="10" fill="#8b5cf6"/>
+    <text x="800" y="223" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Liver &amp; Protein</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="11" fill="#374151">
+    <text x="670" y="255"><tspan font-weight="bold" fill="#8b5cf6">Total Protein</tspan> [Mass/vol] Serum/Plasma</text>
+    <text x="910" y="255" font-family="monospace" font-size="10" fill="#6b7280">2885-2</text>
+
+    <text x="670" y="280"><tspan font-weight="bold" fill="#8b5cf6">Albumin</tspan> [Mass/vol] Serum/Plasma</text>
+    <text x="910" y="280" font-family="monospace" font-size="10" fill="#6b7280">1751-7</text>
+
+    <text x="670" y="305"><tspan font-weight="bold" fill="#8b5cf6">Total Bilirubin</tspan> [Mass/vol] Serum/Plas</text>
+    <text x="910" y="305" font-family="monospace" font-size="10" fill="#6b7280">1975-2</text>
+
+    <text x="670" y="330"><tspan font-weight="bold" fill="#8b5cf6">Alk Phos</tspan> [Enzymatic act/vol]</text>
+    <text x="910" y="330" font-family="monospace" font-size="10" fill="#6b7280">6768-6</text>
+
+    <text x="670" y="355"><tspan font-weight="bold" fill="#8b5cf6">AST</tspan> [Enzymatic act/vol] Serum/Plas</text>
+    <text x="910" y="355" font-family="monospace" font-size="10" fill="#6b7280">1920-8</text>
+
+    <text x="670" y="380"><tspan font-weight="bold" fill="#8b5cf6">ALT</tspan> [Enzymatic act/vol] Serum/Plas</text>
+    <text x="910" y="380" font-family="monospace" font-size="10" fill="#6b7280">1742-6</text>
+  </g>
+
+  <!-- Maria's Results Box -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="430" width="900" height="130" rx="12" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <rect x="50" y="430" width="900" height="35" rx="12" fill="#f3f4f6"/>
+    <text x="500" y="453" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151" text-anchor="middle">Maria Rodriguez — CMP Results (01/14/2026)</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="12" fill="#374151">
+    <!-- Row 1 -->
+    <text x="80" y="485"><tspan font-weight="bold">Glucose:</tspan> 162 mg/dL</text>
+    <text x="205" y="485" fill="#ef4444" font-weight="bold">HIGH</text>
+
+    <text x="280" y="485"><tspan font-weight="bold">BUN:</tspan> 18 mg/dL</text>
+    <text x="375" y="485" fill="#10b981">Normal</text>
+
+    <text x="450" y="485"><tspan font-weight="bold">Creatinine:</tspan> 0.9 mg/dL</text>
+    <text x="580" y="485" fill="#10b981">Normal</text>
+
+    <text x="660" y="485"><tspan font-weight="bold">eGFR:</tspan> 65 mL/min</text>
+    <text x="775" y="485" fill="#10b981">Normal</text>
+
+    <!-- Row 2 -->
+    <text x="80" y="515"><tspan font-weight="bold">Sodium:</tspan> 140 mEq/L</text>
+    <text x="205" y="515" fill="#10b981">Normal</text>
+
+    <text x="280" y="515"><tspan font-weight="bold">Potassium:</tspan> 4.2 mEq/L</text>
+    <text x="410" y="515" fill="#10b981">Normal</text>
+
+    <text x="490" y="515"><tspan font-weight="bold">Chloride:</tspan> 102 mEq/L</text>
+    <text x="610" y="515" fill="#10b981">Normal</text>
+
+    <text x="690" y="515"><tspan font-weight="bold">CO₂:</tspan> 24 mEq/L</text>
+    <text x="780" y="515" fill="#10b981">Normal</text>
+
+    <!-- Row 3 -->
+    <text x="80" y="545"><tspan font-weight="bold">AST:</tspan> 28 U/L</text>
+    <text x="165" y="545" fill="#10b981">Normal</text>
+
+    <text x="240" y="545"><tspan font-weight="bold">ALT:</tspan> 32 U/L</text>
+    <text x="325" y="545" fill="#10b981">Normal</text>
+
+    <text x="400" y="545"><tspan font-weight="bold">Alk Phos:</tspan> 68 U/L</text>
+    <text x="510" y="545" fill="#10b981">Normal</text>
+
+    <text x="590" y="545"><tspan font-weight="bold">Total Bilirubin:</tspan> 0.8 mg/dL</text>
+    <text x="750" y="545" fill="#10b981">Normal</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(50, 580)">
+    <rect width="900" height="60" rx="8" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">LOINC Panel Concept:</text>
+    <text x="160" y="25" font-family="Arial, sans-serif" font-size="11" fill="#374151">The CMP panel code (24323-8) serves as a parent observation containing all 14 child lab tests.</text>
+    <text x="20" y="45" font-family="Arial, sans-serif" font-size="11" fill="#374151">Each child observation has its own LOINC code, enabling granular querying (e.g., all glucose values) or panel-level retrieval.</text>
+  </g>
+
+  <!-- LOINC Badge -->
+  <g transform="translate(850, 660)">
+    <rect width="100" height="30" rx="5" fill="#4facfe"/>
+    <text x="50" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">LOINC</text>
+  </g>
+
+</svg>

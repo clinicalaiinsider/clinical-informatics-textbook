@@ -1,0 +1,5 @@
+care_site_id,care_site_name,place_of_service_concept_id,location_id,care_site_source_value
+1,Springfield Family Medicine,8940,2,SFM-001
+2,Springfield General Hospital,8717,3,SGH-001
+3,Springfield Cardiology Associates,8940,4,SCA-001
+4,Springfield General Hospital ED,8870,3,SGH-ED-001

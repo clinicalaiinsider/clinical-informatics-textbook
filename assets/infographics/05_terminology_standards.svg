@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="icdGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e53e3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c53030;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cptGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3182ce;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="loincGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#38a169;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#276749;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#faf5ff"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="70" fill="url(#headerGrad)"/>
+  <text x="600" y="45" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle">Healthcare Terminology Standards - Code Structure</text>
+
+  <!-- ICD-10-CM Section -->
+  <rect x="40" y="100" width="360" height="380" rx="10" fill="#fef2f2" stroke="#e53e3e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="100" width="360" height="50" rx="10" fill="url(#icdGrad)"/>
+  <text x="220" y="132" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">ICD-10-CM Structure</text>
+
+  <!-- ICD Tree -->
+  <text x="60" y="175" font-family="monospace" font-size="13" fill="#7f1d1d" font-weight="bold">Format: XXX.XXXX (3-7 chars)</text>
+
+  <rect x="60" y="195" width="320" height="30" rx="4" fill="white" stroke="#c53030" stroke-width="1"/>
+  <text x="70" y="215" font-family="monospace" font-size="11" fill="#1a202c">├── Char 1-3: Category (Chapter/Block)</text>
+
+  <rect x="80" y="235" width="300" height="25" rx="3" fill="#fee2e2"/>
+  <text x="90" y="252" font-family="monospace" font-size="10" fill="#7f1d1d">└── E = Endocrine, metabolic diseases</text>
+
+  <rect x="80" y="265" width="300" height="25" rx="3" fill="#fee2e2"/>
+  <text x="90" y="282" font-family="monospace" font-size="10" fill="#7f1d1d">└── I = Circulatory system (I30-I52)</text>
+
+  <rect x="60" y="300" width="320" height="25" rx="4" fill="white" stroke="#c53030" stroke-width="1"/>
+  <text x="70" y="317" font-family="monospace" font-size="11" fill="#1a202c">├── Char 4: Etiology/manifestation</text>
+
+  <rect x="60" y="330" width="320" height="25" rx="4" fill="white" stroke="#c53030" stroke-width="1"/>
+  <text x="70" y="347" font-family="monospace" font-size="11" fill="#1a202c">├── Char 5: Severity/episode</text>
+
+  <rect x="60" y="360" width="320" height="25" rx="4" fill="white" stroke="#c53030" stroke-width="1"/>
+  <text x="70" y="377" font-family="monospace" font-size="11" fill="#1a202c">├── Char 6: Additional specificity</text>
+
+  <rect x="60" y="390" width="320" height="25" rx="4" fill="white" stroke="#c53030" stroke-width="1"/>
+  <text x="70" y="407" font-family="monospace" font-size="11" fill="#1a202c">└── Char 7: Extension (injuries)</text>
+
+  <!-- ICD Example -->
+  <rect x="60" y="425" width="320" height="45" rx="5" fill="#c53030"/>
+  <text x="220" y="445" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Example: E11.65</text>
+  <text x="220" y="462" font-family="Arial, sans-serif" font-size="10" fill="#fecaca" text-anchor="middle">E=Endocrine | 11=T2DM | 65=Hyperglycemia</text>
+
+  <!-- CPT Section -->
+  <rect x="420" y="100" width="360" height="380" rx="10" fill="#ebf8ff" stroke="#3182ce" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="420" y="100" width="360" height="50" rx="10" fill="url(#cptGrad)"/>
+  <text x="600" y="132" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">CPT Code Categories</text>
+
+  <!-- CPT Tree -->
+  <text x="440" y="175" font-family="monospace" font-size="13" fill="#1e40af" font-weight="bold">5-digit numeric codes</text>
+
+  <rect x="440" y="195" width="320" height="55" rx="4" fill="white" stroke="#2c5282" stroke-width="1"/>
+  <text x="450" y="212" font-family="monospace" font-size="11" fill="#1a202c">├── Category I: E&amp;M (99201-99499)</text>
+  <text x="465" y="228" font-family="monospace" font-size="9" fill="#4a5568">├── 99201-99215: Office visits</text>
+  <text x="465" y="242" font-family="monospace" font-size="9" fill="#4a5568">└── 99281-99285: Emergency dept</text>
+
+  <rect x="440" y="260" width="320" height="85" rx="4" fill="white" stroke="#2c5282" stroke-width="1"/>
+  <text x="450" y="277" font-family="monospace" font-size="11" fill="#1a202c">├── Category I: Procedures</text>
+  <text x="465" y="293" font-family="monospace" font-size="9" fill="#4a5568">├── 33010-37799: Cardiovascular</text>
+  <text x="465" y="307" font-family="monospace" font-size="9" fill="#4a5568">├── 70010-79999: Radiology</text>
+  <text x="465" y="321" font-family="monospace" font-size="9" fill="#4a5568">├── 80047-89398: Laboratory</text>
+  <text x="465" y="335" font-family="monospace" font-size="9" fill="#4a5568">└── 90281-99607: Medicine (ECGs)</text>
+
+  <rect x="440" y="355" width="320" height="30" rx="4" fill="white" stroke="#2c5282" stroke-width="1"/>
+  <text x="450" y="375" font-family="monospace" font-size="11" fill="#1a202c">├── Category II: Performance (0001F-9007F)</text>
+
+  <rect x="440" y="395" width="320" height="30" rx="4" fill="white" stroke="#2c5282" stroke-width="1"/>
+  <text x="450" y="415" font-family="monospace" font-size="11" fill="#1a202c">└── Category III: Emerging (0042T-0999T)</text>
+
+  <!-- CPT Example -->
+  <rect x="440" y="435" width="320" height="35" rx="5" fill="#2c5282"/>
+  <text x="600" y="458" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Example: 93000 = EKG, 12-lead complete</text>
+
+  <!-- LOINC Section -->
+  <rect x="800" y="100" width="360" height="380" rx="10" fill="#f0fff4" stroke="#38a169" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="800" y="100" width="360" height="50" rx="10" fill="url(#loincGrad)"/>
+  <text x="980" y="132" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">LOINC 6-Axis Structure</text>
+
+  <!-- LOINC Tree -->
+  <text x="820" y="175" font-family="monospace" font-size="13" fill="#14532d" font-weight="bold">Logical Observation Identifiers</text>
+
+  <rect x="820" y="195" width="320" height="30" rx="4" fill="white" stroke="#276749" stroke-width="1"/>
+  <text x="830" y="215" font-family="monospace" font-size="11" fill="#1a202c">├── Component: What is measured</text>
+
+  <rect x="840" y="230" width="280" height="20" rx="3" fill="#dcfce7"/>
+  <text x="850" y="244" font-family="monospace" font-size="9" fill="#14532d">e.g., Glucose, Hemoglobin A1c</text>
+
+  <rect x="820" y="260" width="320" height="30" rx="4" fill="white" stroke="#276749" stroke-width="1"/>
+  <text x="830" y="280" font-family="monospace" font-size="11" fill="#1a202c">├── Property: Type of measurement</text>
+
+  <rect x="840" y="295" width="280" height="20" rx="3" fill="#dcfce7"/>
+  <text x="850" y="309" font-family="monospace" font-size="9" fill="#14532d">MCnc=mass concentration, Num=#</text>
+
+  <rect x="820" y="325" width="320" height="30" rx="4" fill="white" stroke="#276749" stroke-width="1"/>
+  <text x="830" y="345" font-family="monospace" font-size="11" fill="#1a202c">├── Time: Pt=point, 24H=24-hour</text>
+
+  <rect x="820" y="360" width="320" height="30" rx="4" fill="white" stroke="#276749" stroke-width="1"/>
+  <text x="830" y="380" font-family="monospace" font-size="11" fill="#1a202c">├── System: Specimen (Ser/Plas)</text>
+
+  <rect x="820" y="395" width="320" height="30" rx="4" fill="white" stroke="#276749" stroke-width="1"/>
+  <text x="830" y="415" font-family="monospace" font-size="11" fill="#1a202c">├── Scale: Qn=quant, Ord=ordinal</text>
+
+  <rect x="820" y="430" width="320" height="25" rx="4" fill="white" stroke="#276749" stroke-width="1"/>
+  <text x="830" y="447" font-family="monospace" font-size="11" fill="#1a202c">└── Method: How measured (optional)</text>
+
+  <!-- LOINC Example -->
+  <rect x="820" y="460" width="320" height="20" rx="3" fill="#276749"/>
+  <text x="980" y="474" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">2345-7: Glucose [Mass/vol] in Serum</text>
+
+  <!-- Healthcare Payers Section -->
+  <rect x="40" y="510" width="550" height="360" rx="10" fill="#fffaf0" stroke="#dd6b20" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="510" width="550" height="45" rx="10" fill="#dd6b20"/>
+  <text x="315" y="540" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Healthcare Payers Ontology</text>
+
+  <!-- Payers Tree -->
+  <text x="60" y="580" font-family="monospace" font-size="12" fill="#7c2d12" font-weight="bold">Healthcare Payers</text>
+
+  <text x="60" y="605" font-family="monospace" font-size="11" fill="#1a202c">├── Government Programs</text>
+  <text x="80" y="625" font-family="monospace" font-size="10" fill="#4a5568">├── Medicare (FFS, MA, Part D)</text>
+  <text x="80" y="643" font-family="monospace" font-size="10" fill="#c05621">├── Medicaid (FFS, Managed Care) ← Maria</text>
+  <text x="80" y="661" font-family="monospace" font-size="10" fill="#4a5568">├── CHIP, VA, TRICARE</text>
+
+  <text x="60" y="685" font-family="monospace" font-size="11" fill="#1a202c">├── Commercial Insurance</text>
+  <text x="80" y="705" font-family="monospace" font-size="10" fill="#4a5568">├── Employer-Sponsored</text>
+  <text x="80" y="723" font-family="monospace" font-size="10" fill="#4a5568">├── Individual Market</text>
+  <text x="80" y="741" font-family="monospace" font-size="10" fill="#4a5568">└── ACA Exchange Plans</text>
+
+  <text x="60" y="765" font-family="monospace" font-size="11" fill="#1a202c">├── Self-Pay</text>
+  <text x="80" y="785" font-family="monospace" font-size="10" fill="#4a5568">├── Uninsured</text>
+  <text x="80" y="803" font-family="monospace" font-size="10" fill="#4a5568">└── Patient Responsibility</text>
+
+  <text x="60" y="827" font-family="monospace" font-size="11" fill="#1a202c">└── Other (Workers' Comp, Auto)</text>
+
+  <!-- Maria's Coverage Callout -->
+  <rect x="340" y="630" width="230" height="55" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="455" y="652" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">Maria's Coverage</text>
+  <text x="455" y="672" font-family="Arial, sans-serif" font-size="10" fill="#78350f" text-anchor="middle">IlliniCare Medicaid Managed Care</text>
+
+  <!-- Diagnostic Order Flow Section -->
+  <rect x="610" y="510" width="550" height="360" rx="10" fill="#f0f9ff" stroke="#0284c7" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="610" y="510" width="550" height="45" rx="10" fill="#0284c7"/>
+  <text x="885" y="540" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Provider Order Entry Flow</text>
+
+  <!-- Flow diagram -->
+  <rect x="780" y="575" width="210" height="35" rx="6" fill="white" stroke="#0284c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="885" y="598" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">Provider Order Entry</text>
+
+  <line x1="885" y1="610" x2="885" y2="630" stroke="#4a5568" stroke-width="2"/>
+  <polygon points="885,635 880,625 890,625" fill="#4a5568"/>
+
+  <rect x="730" y="640" width="310" height="70" rx="6" fill="#dbeafe" stroke="#0284c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="885" y="665" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">Clinical Decision Support</text>
+  <text x="885" y="685" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Duplicate check | Allergy check | Drug interaction</text>
+  <text x="885" y="700" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Appropriate use criteria</text>
+
+  <line x1="885" y1="710" x2="885" y2="730" stroke="#4a5568" stroke-width="2"/>
+  <polygon points="885,735 880,725 890,725" fill="#4a5568"/>
+
+  <rect x="780" y="740" width="210" height="35" rx="6" fill="white" stroke="#0284c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="885" y="763" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">Order Signed by Provider</text>
+
+  <!-- Split to Lab and Rad -->
+  <line x1="885" y1="775" x2="885" y2="790" stroke="#4a5568" stroke-width="2"/>
+  <line x1="780" y1="790" x2="990" y2="790" stroke="#4a5568" stroke-width="2"/>
+
+  <line x1="780" y1="790" x2="780" y2="805" stroke="#4a5568" stroke-width="2"/>
+  <polygon points="780,810 775,800 785,800" fill="#4a5568"/>
+
+  <line x1="990" y1="790" x2="990" y2="805" stroke="#4a5568" stroke-width="2"/>
+  <polygon points="990,810 985,800 995,800" fill="#4a5568"/>
+
+  <rect x="700" y="815" width="160" height="45" rx="5" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="780" y="835" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">Lab Orders</text>
+  <text x="780" y="850" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">ORM^O01 → Quest Lab</text>
+
+  <rect x="910" y="815" width="160" height="45" rx="5" fill="#fef3c7" stroke="#ca8a04" stroke-width="1"/>
+  <text x="990" y="835" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">Radiology Orders</text>
+  <text x="990" y="850" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">ORM^O01 → RIS</text>
+
+  <!-- Footer -->
+  <text x="1160" y="885" font-family="Arial, sans-serif" font-size="10" fill="#a0aec0" text-anchor="end">Clinical Informatics Textbook - Appendix A</text>
+</svg>

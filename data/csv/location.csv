@@ -1,0 +1,5 @@
+location_id,address_1,address_2,city,state,zip,county,location_source_value
+1,123 Oak Street,,Springfield,IL,62701,Sangamon,HOME-12345
+2,456 Medical Center Drive,,Springfield,IL,62702,Sangamon,CLINIC-PCP
+3,789 Hospital Boulevard,,Springfield,IL,62703,Sangamon,HOSPITAL-MAIN
+4,321 Cardiology Way,,Springfield,IL,62702,Sangamon,CLINIC-CARDIO

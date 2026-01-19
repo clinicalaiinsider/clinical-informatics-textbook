@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orderGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="transmitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dispenseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#faf5ff"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="70" fill="url(#headerGrad)"/>
+  <text x="600" y="35" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle">Medication Management Workflow</text>
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="12" fill="#e9d8fd" text-anchor="middle">Electronic Prescribing &amp; Pharmacy Integration - Maria Rodriguez</text>
+
+  <!-- SECTION 1: Electronic Order Entry -->
+  <rect x="40" y="95" width="350" height="45" rx="8" fill="url(#orderGrad)" filter="url(#shadow)"/>
+  <text x="215" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">1. ELECTRONIC ORDER ENTRY</text>
+
+  <rect x="40" y="155" width="105" height="70" rx="6" fill="white" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="92" y="180" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">MedRequest</text>
+  <text x="92" y="195" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">FHIR</text>
+  <text x="92" y="215" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Resource</text>
+
+  <rect x="160" y="155" width="105" height="70" rx="6" fill="white" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="212" y="180" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">Allergy</text>
+  <text x="212" y="195" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Check</text>
+  <text x="212" y="215" font-family="Arial, sans-serif" font-size="9" fill="#10b981" text-anchor="middle">✓ Clear</text>
+
+  <rect x="280" y="155" width="105" height="70" rx="6" fill="white" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="332" y="180" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">CPOE</text>
+  <text x="332" y="195" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">CDS Alert</text>
+  <text x="332" y="215" font-family="Arial, sans-serif" font-size="9" fill="#f59e0b" text-anchor="middle">⚠ Drug-Drug</text>
+
+  <!-- Arrow -->
+  <line x1="395" y1="190" x2="425" y2="190" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- SECTION 2: Transmission -->
+  <rect x="430" y="95" width="340" height="45" rx="8" fill="url(#transmitGrad)" filter="url(#shadow)"/>
+  <text x="600" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">2. TRANSMISSION</text>
+
+  <rect x="430" y="155" width="100" height="70" rx="6" fill="white" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="180" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857" text-anchor="middle">NCPDP</text>
+  <text x="480" y="195" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">SCRIPT</text>
+  <text x="480" y="215" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Standard</text>
+
+  <rect x="545" y="155" width="100" height="70" rx="6" fill="white" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <text x="595" y="180" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857" text-anchor="middle">RxNorm</text>
+  <text x="595" y="195" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Codes</text>
+  <text x="595" y="215" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">1364435</text>
+
+  <rect x="660" y="155" width="100" height="70" rx="6" fill="white" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <text x="710" y="180" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857" text-anchor="middle">SureScripts</text>
+  <text x="710" y="195" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Network</text>
+  <text x="710" y="215" font-family="Arial, sans-serif" font-size="9" fill="#10b981" text-anchor="middle">✓ Sent</text>
+
+  <!-- Arrow -->
+  <line x1="775" y1="190" x2="805" y2="190" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- SECTION 3: Dispensing -->
+  <rect x="810" y="95" width="350" height="45" rx="8" fill="url(#dispenseGrad)" filter="url(#shadow)"/>
+  <text x="985" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">3. DISPENSING</text>
+
+  <rect x="810" y="155" width="105" height="70" rx="6" fill="white" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="862" y="180" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle">Fill Queue</text>
+  <text x="862" y="198" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Pharmacy</text>
+  <text x="862" y="215" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Workflow</text>
+
+  <rect x="930" y="155" width="105" height="70" rx="6" fill="white" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="982" y="180" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle">DUR Check</text>
+  <text x="982" y="198" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Drug Util</text>
+  <text x="982" y="215" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Review</text>
+
+  <rect x="1050" y="155" width="105" height="70" rx="6" fill="white" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1102" y="180" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle">Counsel</text>
+  <text x="1102" y="198" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Patient</text>
+  <text x="1102" y="215" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Education</text>
+
+  <!-- Maria's Medication Profile Section -->
+  <rect x="40" y="260" width="1120" height="45" rx="8" fill="#7c3aed" filter="url(#shadow)"/>
+  <text x="600" y="290" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">MARIA'S MEDICATION PROFILE</text>
+
+  <!-- Medication Cards -->
+  <rect x="40" y="325" width="210" height="130" rx="8" fill="white" stroke="#ef4444" stroke-width="3" filter="url(#shadow)"/>
+  <rect x="40" y="325" width="210" height="35" rx="8" fill="#ef4444"/>
+  <text x="145" y="348" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Apixaban 5mg BID</text>
+  <text x="145" y="380" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">ANTICOAGULANT</text>
+  <text x="145" y="400" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Indication: AFib stroke prevention</text>
+  <text x="145" y="420" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">RxNorm: 1364435</text>
+  <text x="145" y="440" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Started: 01/13/2026</text>
+
+  <rect x="270" y="325" width="210" height="130" rx="8" fill="white" stroke="#3b82f6" stroke-width="3" filter="url(#shadow)"/>
+  <rect x="270" y="325" width="210" height="35" rx="8" fill="#3b82f6"/>
+  <text x="375" y="348" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Metoprolol 50mg QD</text>
+  <text x="375" y="380" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2563eb" text-anchor="middle">RATE CONTROL</text>
+  <text x="375" y="400" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Indication: AFib heart rate</text>
+  <text x="375" y="420" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">RxNorm: 866924</text>
+  <text x="375" y="440" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Started: 01/13/2026</text>
+
+  <rect x="500" y="325" width="210" height="130" rx="8" fill="white" stroke="#8b5cf6" stroke-width="3" filter="url(#shadow)"/>
+  <rect x="500" y="325" width="210" height="35" rx="8" fill="#8b5cf6"/>
+  <text x="605" y="348" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Metformin 1000mg BID</text>
+  <text x="605" y="380" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#7c3aed" text-anchor="middle">DIABETES</text>
+  <text x="605" y="400" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Indication: Type 2 DM</text>
+  <text x="605" y="420" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">RxNorm: 861007</text>
+  <text x="605" y="440" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Long-standing</text>
+
+  <rect x="730" y="325" width="210" height="130" rx="8" fill="white" stroke="#10b981" stroke-width="3" filter="url(#shadow)"/>
+  <rect x="730" y="325" width="210" height="35" rx="8" fill="#10b981"/>
+  <text x="835" y="348" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Lisinopril 20mg QD</text>
+  <text x="835" y="380" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#059669" text-anchor="middle">BP / RENAL</text>
+  <text x="835" y="400" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Indication: HTN, DM nephropathy</text>
+  <text x="835" y="420" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">RxNorm: 314076</text>
+  <text x="835" y="440" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Long-standing</text>
+
+  <rect x="960" y="325" width="200" height="130" rx="8" fill="white" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,5" filter="url(#shadow)"/>
+  <rect x="960" y="325" width="200" height="35" rx="8" fill="#9ca3af"/>
+  <text x="1060" y="348" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Atorvastatin</text>
+  <text x="1060" y="380" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b7280" text-anchor="middle">PENDING</text>
+  <text x="1060" y="400" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Indication: Statin therapy</text>
+  <text x="1060" y="420" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">for CV risk reduction</text>
+  <text x="1060" y="440" font-family="Arial, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle">Consider adding</text>
+
+  <!-- Pharmacovigilance Section -->
+  <rect x="40" y="480" width="550" height="140" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="480" width="550" height="35" rx="10" fill="#ef4444"/>
+  <text x="315" y="503" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">PHARMACOVIGILANCE MONITORING</text>
+
+  <rect x="60" y="530" width="160" height="75" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="140" y="555" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">Bleeding Risk</text>
+  <text x="140" y="575" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Monitor for GI bleed</text>
+  <text x="140" y="590" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Easy bruising, nosebleeds</text>
+
+  <rect x="235" y="530" width="160" height="75" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="315" y="555" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">Renal Monitoring</text>
+  <text x="315" y="575" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">eGFR: 82 (normal)</text>
+  <text x="315" y="590" font-family="Arial, sans-serif" font-size="9" fill="#10b981" text-anchor="middle">No dose adjustment</text>
+
+  <rect x="410" y="530" width="160" height="75" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="490" y="555" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">Adherence</text>
+  <text x="490" y="575" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">BID dosing critical</text>
+  <text x="490" y="590" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">Refill monitoring</text>
+
+  <!-- Drug Interaction Section -->
+  <rect x="610" y="480" width="550" height="140" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="610" y="480" width="550" height="35" rx="10" fill="#f59e0b"/>
+  <text x="885" y="503" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">DRUG INTERACTION ALERT</text>
+
+  <rect x="630" y="530" width="510" height="75" rx="6" fill="white" stroke="#fcd34d" stroke-width="1"/>
+  <text x="885" y="555" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">⚠ Metoprolol + Metformin Interaction</text>
+  <text x="885" y="575" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Beta-blockers may mask symptoms of hypoglycemia (tachycardia, tremor)</text>
+  <text x="885" y="595" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" text-anchor="middle">Action: Counsel patient to monitor for hypoglycemia; rely on hunger, sweating as symptoms</text>
+
+  <!-- OMOP Mapping -->
+  <rect x="40" y="645" width="1120" height="110" rx="10" fill="#f0fdf4" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="645" width="1120" height="35" rx="10" fill="#10b981"/>
+  <text x="600" y="668" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">OMOP CDM MAPPING (drug_exposure table)</text>
+
+  <text x="120" y="705" font-family="monospace" font-size="11" fill="#4a5568">drug_concept_id: 40228152 (Apixaban)</text>
+  <text x="120" y="725" font-family="monospace" font-size="11" fill="#4a5568">drug_exposure_start_date: 2026-01-13</text>
+  <text x="120" y="745" font-family="monospace" font-size="11" fill="#4a5568">days_supply: 30</text>
+
+  <text x="450" y="705" font-family="monospace" font-size="11" fill="#4a5568">quantity: 60</text>
+  <text x="450" y="725" font-family="monospace" font-size="11" fill="#4a5568">sig: "Take 5mg by mouth twice daily"</text>
+  <text x="450" y="745" font-family="monospace" font-size="11" fill="#4a5568">drug_source_value: "1364435"</text>
+
+  <text x="850" y="705" font-family="monospace" font-size="11" fill="#4a5568">visit_occurrence_id: 900001</text>
+  <text x="850" y="725" font-family="monospace" font-size="11" fill="#4a5568">provider_id: 70001</text>
+  <text x="850" y="745" font-family="monospace" font-size="11" fill="#4a5568">person_id: 12345</text>
+
+  <!-- Footer -->
+  <text x="1160" y="785" font-family="Arial, sans-serif" font-size="10" fill="#a0aec0" text-anchor="end">Clinical Informatics Textbook - Chapter 5</text>
+</svg>

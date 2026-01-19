@@ -1,0 +1,5 @@
+provider_id,provider_name,npi,dea,specialty_concept_id,care_site_id,year_of_birth,gender_concept_id,provider_source_value,specialty_source_value
+101,Dr. Sarah Chen,1234567890,,38004446,1,,8532,PROV-101,Family Medicine
+102,Dr. Michael Roberts,2345678901,,38004451,3,,8507,PROV-102,Cardiology
+103,Dr. Emily Watson,3456789012,,38004479,2,,8532,PROV-103,Internal Medicine
+104,RN Jennifer Adams,4567890123,,,2,,8532,PROV-104,Registered Nurse

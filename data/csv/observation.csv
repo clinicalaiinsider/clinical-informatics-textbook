@@ -1,0 +1,5 @@
+observation_id,person_id,observation_concept_id,observation_date,observation_datetime,observation_type_concept_id,value_as_number,value_as_string,value_as_concept_id,qualifier_concept_id,unit_concept_id,provider_id,visit_occurrence_id,observation_source_value,observation_source_concept_id,unit_source_value,qualifier_source_value
+6001,12345,40766442,2026-01-06,2026-01-06 17:00:00,32856,3,HIGH,,,0,103,1002,CHA2DS2-VASc,,,
+6002,12345,40766443,2026-01-06,2026-01-06 17:00:00,32856,1,LOW,,,0,103,1002,HAS-BLED,,,
+6003,12345,4058286,2019-08-22,2019-08-22 00:00:00,32856,,,45879404,,,101,1001,tobacco-use,,,Never smoker
+6004,12345,4005823,2026-01-06,2026-01-06 09:30:00,32856,2,Moderate,,,0,101,1001,alcohol-use,,,2 drinks/week

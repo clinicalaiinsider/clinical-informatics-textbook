@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="contactGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4299e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2b6cb0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="verifyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#48bb78;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2f855a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="insuranceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ed8936;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c05621;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="systemsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#805ad5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b46c1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="standardsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e53e3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c53030;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1400" height="80" fill="url(#headerGrad)"/>
+  <text x="700" y="35" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="white" text-anchor="middle">Patient Registration Workflow</text>
+  <text x="700" y="60" font-family="Arial, sans-serif" font-size="16" fill="#bee3f8" text-anchor="middle">Community Health Clinic - Maria Rodriguez Case Study</text>
+
+  <!-- Main Title Box -->
+  <rect x="550" y="100" width="300" height="50" rx="10" fill="#2d3748" filter="url(#shadow)"/>
+  <text x="700" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">REGISTRATION INTAKE</text>
+
+  <!-- Vertical line from title -->
+  <line x1="700" y1="150" x2="700" y2="175" stroke="#4a5568" stroke-width="2"/>
+
+  <!-- Three branches with polygon arrows -->
+  <!-- Left branch to Patient Contact -->
+  <path d="M 700 175 L 230 175 L 230 200" stroke="#4a5568" stroke-width="2" fill="none"/>
+  <polygon points="230,210 224,200 236,200" fill="#4a5568"/>
+
+  <!-- Center branch to Identity Verification -->
+  <line x1="700" y1="175" x2="700" y2="200" stroke="#4a5568" stroke-width="2"/>
+  <polygon points="700,210 694,200 706,200" fill="#4a5568"/>
+
+  <!-- Right branch to Insurance Check -->
+  <path d="M 700 175 L 1170 175 L 1170 200" stroke="#4a5568" stroke-width="2" fill="none"/>
+  <polygon points="1170,210 1164,200 1176,200" fill="#4a5568"/>
+
+  <!-- SECTION 1: Patient Contact -->
+  <rect x="80" y="210" width="300" height="50" rx="8" fill="url(#contactGrad)" filter="url(#shadow)"/>
+  <text x="230" y="242" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">PATIENT CONTACT</text>
+
+  <!-- Contact sub-boxes -->
+  <rect x="80" y="275" width="90" height="60" rx="6" fill="white" stroke="#4299e1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="125" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Phone</text>
+  <text x="125" y="318" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Call</text>
+
+  <rect x="185" y="275" width="90" height="60" rx="6" fill="white" stroke="#4299e1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="230" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Walk-In</text>
+  <text x="230" y="318" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Visit</text>
+
+  <rect x="290" y="275" width="90" height="60" rx="6" fill="white" stroke="#4299e1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="335" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Portal</text>
+  <text x="335" y="318" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Request</text>
+
+  <!-- SECTION 2: Identity Verify -->
+  <rect x="550" y="210" width="300" height="50" rx="8" fill="url(#verifyGrad)" filter="url(#shadow)"/>
+  <text x="700" y="242" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">IDENTITY VERIFICATION</text>
+
+  <!-- Verify sub-boxes -->
+  <rect x="550" y="275" width="90" height="60" rx="6" fill="white" stroke="#48bb78" stroke-width="2" filter="url(#shadow)"/>
+  <text x="595" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2f855a" text-anchor="middle">Photo ID</text>
+  <text x="595" y="318" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Check</text>
+
+  <rect x="655" y="275" width="90" height="60" rx="6" fill="white" stroke="#48bb78" stroke-width="2" filter="url(#shadow)"/>
+  <text x="700" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2f855a" text-anchor="middle">DOB</text>
+  <text x="700" y="318" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Confirm</text>
+
+  <rect x="760" y="275" width="90" height="60" rx="6" fill="white" stroke="#48bb78" stroke-width="2" filter="url(#shadow)"/>
+  <text x="805" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2f855a" text-anchor="middle">MPI</text>
+  <text x="805" y="318" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Match</text>
+
+  <!-- SECTION 3: Insurance Check -->
+  <rect x="1020" y="210" width="300" height="50" rx="8" fill="url(#insuranceGrad)" filter="url(#shadow)"/>
+  <text x="1170" y="242" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">INSURANCE CHECK</text>
+
+  <!-- Insurance sub-boxes -->
+  <rect x="1020" y="275" width="90" height="60" rx="6" fill="white" stroke="#ed8936" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1065" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#c05621" text-anchor="middle">270</text>
+  <text x="1065" y="318" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Request</text>
+
+  <rect x="1125" y="275" width="90" height="60" rx="6" fill="white" stroke="#ed8936" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1170" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#c05621" text-anchor="middle">Coverage</text>
+  <text x="1170" y="318" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Verify</text>
+
+  <rect x="1230" y="275" width="90" height="60" rx="6" fill="white" stroke="#ed8936" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1275" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#c05621" text-anchor="middle">Copay</text>
+  <text x="1275" y="318" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Calculate</text>
+
+  <!-- 271 Response box -->
+  <rect x="1125" y="355" width="140" height="80" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1195" y="380" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">271 Response</text>
+  <text x="1195" y="400" font-family="Arial, sans-serif" font-size="10" fill="#78350f" text-anchor="middle">- Active Status</text>
+  <text x="1195" y="415" font-family="Arial, sans-serif" font-size="10" fill="#78350f" text-anchor="middle">- Coverage Dates</text>
+  <text x="1195" y="430" font-family="Arial, sans-serif" font-size="10" fill="#78350f" text-anchor="middle">- Plan Details</text>
+  <!-- Arrow from Coverage Verify to 271 Response -->
+  <line x1="1195" y1="335" x2="1195" y2="348" stroke="#d97706" stroke-width="2"/>
+  <polygon points="1195,355 1189,345 1201,345" fill="#d97706"/>
+
+  <!-- DATA SYSTEMS SECTION -->
+  <rect x="80" y="460" width="1240" height="45" rx="8" fill="url(#systemsGrad)" filter="url(#shadow)"/>
+  <text x="700" y="490" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">DATA SYSTEMS UPDATED</text>
+
+  <!-- System boxes - Row 1 -->
+  <rect x="80" y="525" width="180" height="80" rx="6" fill="white" stroke="#805ad5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="80" y="525" width="180" height="28" rx="6" fill="#805ad5"/>
+  <text x="170" y="545" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">MPI</text>
+  <text x="170" y="570" font-family="Arial, sans-serif" font-size="11" fill="#553c9a" text-anchor="middle">Master Patient Index</text>
+  <text x="170" y="590" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">person_id assigned</text>
+
+  <rect x="290" y="525" width="180" height="80" rx="6" fill="white" stroke="#805ad5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="290" y="525" width="180" height="28" rx="6" fill="#805ad5"/>
+  <text x="380" y="545" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">EHR</text>
+  <text x="380" y="570" font-family="Arial, sans-serif" font-size="11" fill="#553c9a" text-anchor="middle">Record Created</text>
+  <text x="380" y="590" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Encounter started</text>
+
+  <rect x="500" y="525" width="180" height="80" rx="6" fill="white" stroke="#805ad5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="500" y="525" width="180" height="28" rx="6" fill="#805ad5"/>
+  <text x="590" y="545" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">FHIR R4</text>
+  <text x="590" y="570" font-family="Arial, sans-serif" font-size="11" fill="#553c9a" text-anchor="middle">Resources Created</text>
+  <text x="590" y="590" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Patient, Coverage</text>
+
+  <rect x="710" y="525" width="180" height="80" rx="6" fill="white" stroke="#805ad5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="710" y="525" width="180" height="28" rx="6" fill="#805ad5"/>
+  <text x="800" y="545" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">HIE</text>
+  <text x="800" y="570" font-family="Arial, sans-serif" font-size="11" fill="#553c9a" text-anchor="middle">ADT^A04 Sent</text>
+  <text x="800" y="590" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Registration alert</text>
+
+  <rect x="920" y="525" width="180" height="80" rx="6" fill="white" stroke="#805ad5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="920" y="525" width="180" height="28" rx="6" fill="#805ad5"/>
+  <text x="1010" y="545" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Revenue Cycle</text>
+  <text x="1010" y="570" font-family="Arial, sans-serif" font-size="11" fill="#553c9a" text-anchor="middle">Payer Assigned</text>
+  <text x="1010" y="590" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Billing queue</text>
+
+  <rect x="1130" y="525" width="180" height="80" rx="6" fill="white" stroke="#805ad5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="1130" y="525" width="180" height="28" rx="6" fill="#805ad5"/>
+  <text x="1220" y="545" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Analytics</text>
+  <text x="1220" y="570" font-family="Arial, sans-serif" font-size="11" fill="#553c9a" text-anchor="middle">Dashboard Updated</text>
+  <text x="1220" y="590" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Population health</text>
+
+  <!-- TERMINOLOGY STANDARDS SECTION -->
+  <rect x="80" y="640" width="1240" height="45" rx="8" fill="url(#standardsGrad)" filter="url(#shadow)"/>
+  <text x="700" y="670" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">TERMINOLOGY STANDARDS APPLIED</text>
+
+  <!-- Standards boxes -->
+  <rect x="80" y="705" width="180" height="75" rx="6" fill="white" stroke="#e53e3e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="80" y="705" width="180" height="25" rx="6" fill="#e53e3e"/>
+  <text x="170" y="723" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">CDC Race/Ethnicity</text>
+  <text x="170" y="750" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Code: 2106-3</text>
+  <text x="170" y="768" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Hispanic or Latino</text>
+
+  <rect x="290" y="705" width="180" height="75" rx="6" fill="white" stroke="#e53e3e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="290" y="705" width="180" height="25" rx="6" fill="#e53e3e"/>
+  <text x="380" y="723" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">HL7 v2 ADT</text>
+  <text x="380" y="750" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Message: ADT^A04</text>
+  <text x="380" y="768" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Register patient</text>
+
+  <rect x="500" y="705" width="180" height="75" rx="6" fill="white" stroke="#e53e3e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="500" y="705" width="180" height="25" rx="6" fill="#e53e3e"/>
+  <text x="590" y="723" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">FHIR R4</text>
+  <text x="590" y="750" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Patient Resource</text>
+  <text x="590" y="768" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">US Core Profile</text>
+
+  <rect x="710" y="705" width="180" height="75" rx="6" fill="white" stroke="#e53e3e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="710" y="705" width="180" height="25" rx="6" fill="#e53e3e"/>
+  <text x="800" y="723" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">ISO 639-1</text>
+  <text x="800" y="750" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Language: en</text>
+  <text x="800" y="768" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">English</text>
+
+  <rect x="920" y="705" width="180" height="75" rx="6" fill="white" stroke="#e53e3e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="920" y="705" width="180" height="25" rx="6" fill="#e53e3e"/>
+  <text x="1010" y="723" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">X12 270/271</text>
+  <text x="1010" y="750" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Eligibility Inquiry</text>
+  <text x="1010" y="768" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">EDI Transaction</text>
+
+  <rect x="1130" y="705" width="180" height="75" rx="6" fill="white" stroke="#e53e3e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="1130" y="705" width="180" height="25" rx="6" fill="#e53e3e"/>
+  <text x="1220" y="723" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">OMOP CDM</text>
+  <text x="1220" y="750" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">person table</text>
+  <text x="1220" y="768" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">person_id: 12345</text>
+
+  <!-- Maria's Info Box -->
+  <rect x="80" y="810" width="400" height="90" rx="8" fill="#ebf8ff" stroke="#4299e1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="280" y="835" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c5282" text-anchor="middle">Maria Rodriguez - Registration Data</text>
+  <text x="100" y="860" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">MRN: MRN-2024-78432</text>
+  <text x="100" y="878" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">DOB: March 15, 1979</text>
+  <text x="280" y="860" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">Insurance: IlliniCare Medicaid</text>
+  <text x="280" y="878" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">PCP: Dr. Sarah Chen</text>
+
+  <!-- Footer -->
+  <text x="1360" y="980" font-family="Arial, sans-serif" font-size="10" fill="#a0aec0" text-anchor="end">Clinical Informatics Textbook - Chapter 1</text>
+</svg>

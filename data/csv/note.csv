@@ -1,0 +1,62 @@
+note_id,person_id,note_date,note_datetime,note_type_concept_id,note_class_concept_id,note_title,note_text,encoding_concept_id,language_concept_id,provider_id,visit_occurrence_id,note_source_value
+7001,12345,2026-01-06,2026-01-06 09:45:00,44814637,44814637,Office Visit Note,"CHIEF COMPLAINT: Annual wellness visit with recent fatigue and increased thirst.
+
+HISTORY OF PRESENT ILLNESS: 47-year-old Hispanic female presents for routine follow-up. Reports increased fatigue over past 2-3 weeks, polydipsia, and nocturia 2-3x/night. Has history of Type 2 DM diagnosed 2021, HTN diagnosed 2019, and obesity.
+
+REVIEW OF SYSTEMS: Positive for fatigue, increased thirst, frequent urination. Negative for chest pain, shortness of breath, palpitations.
+
+PHYSICAL EXAMINATION:
+- Vitals: BP 148/92, HR 98, Temp 98.6F, BMI 32.1
+- General: Alert, oriented, no acute distress
+- Cardiovascular: Irregular rhythm noted, no murmurs
+- Lungs: Clear to auscultation bilaterally
+
+ASSESSMENT:
+1. Type 2 Diabetes Mellitus - suboptimal control, POC glucose 218
+2. Hypertension - elevated today
+3. New irregular heart rhythm - recommend urgent cardiac evaluation
+
+PLAN:
+- Refer to ED for cardiac workup given new arrhythmia
+- Labs ordered: HbA1c, CMP, lipid panel, TSH
+- Continue current medications pending cardiac evaluation",32856,4180186,101,1001,PCP-NOTE-001
+7002,12345,2026-01-06,2026-01-06 18:30:00,44814637,44814637,Emergency Department Note,"CHIEF COMPLAINT: Referred from PCP for new-onset irregular heart rhythm.
+
+HISTORY OF PRESENT ILLNESS: 47-year-old female referred from PCP after irregular rhythm noted on exam. Patient reports occasional palpitations over past month, initially attributed to stress. Denies syncope, chest pain, or dyspnea at rest.
+
+EMERGENCY DEPARTMENT COURSE:
+- ECG: Atrial fibrillation with RVR, rate 124 bpm
+- Echocardiogram: EF 55%, mild LA enlargement, no significant valvular disease
+- Labs: K 4.1, Mg 1.9, TSH 1.8, HbA1c 8.2%
+
+DIAGNOSIS: New-onset atrial fibrillation, hemodynamically stable
+
+RISK STRATIFICATION:
+- CHA2DS2-VASc = 3 (female, HTN, DM) - HIGH stroke risk
+- HAS-BLED = 1 - LOW bleeding risk
+
+TREATMENT INITIATED:
+- Apixaban 5mg BID for anticoagulation
+- Cardiology consultation obtained
+
+DISPOSITION: Discharge to home with cardiology follow-up in 48 hours",32856,4180186,103,1002,ED-NOTE-001
+7003,12345,2026-01-08,2026-01-08 11:00:00,44814637,44814637,Cardiology Consultation,"REASON FOR CONSULTATION: New-onset atrial fibrillation
+
+HISTORY: 47-year-old female with newly diagnosed AFib discovered 2 days ago at PCP visit. Initiated on apixaban in ED. Comorbidities include T2DM (HbA1c 8.2%), HTN, obesity.
+
+CARDIAC WORKUP REVIEW:
+- ECG: Atrial fibrillation, rate 88 bpm (improved)
+- Echo: EF 55%, mild LA dilation (4.2cm), no significant valvular disease
+- No evidence of structural heart disease
+
+ASSESSMENT: New-onset atrial fibrillation, likely multifactorial (HTN, obesity, possibly sleep apnea)
+
+RECOMMENDATIONS:
+1. Continue apixaban 5mg BID - appropriate given CHA2DS2-VASc 3
+2. Start metoprolol succinate 25mg daily for rate control
+3. Target HR <110 at rest
+4. Sleep study to evaluate for OSA
+5. Lifestyle modifications: weight loss, limit alcohol/caffeine
+6. Follow-up in 1 week for rate assessment
+
+Rate vs rhythm control discussion held with patient - will pursue rate control initially given her multiple comorbidities and stable hemodynamics.",32856,4180186,102,1003,CARDIO-NOTE-001

@@ -1,0 +1,5 @@
+drug_exposure_id,person_id,drug_concept_id,drug_exposure_start_date,drug_exposure_start_datetime,drug_exposure_end_date,drug_exposure_end_datetime,verbatim_end_date,drug_type_concept_id,stop_reason,refills,quantity,days_supply,sig,route_concept_id,lot_number,provider_id,visit_occurrence_id,drug_source_value,drug_source_concept_id,route_source_value,dose_unit_source_value
+4001,12345,1308216,2021-05-15,2021-05-15 00:00:00,,,2026-05-15,32838,,11,90,30,Take 1 tablet by mouth daily,4132161,,101,1001,lisinopril 10mg tablet,1308216,oral,mg
+4002,12345,1503297,2023-02-10,2023-02-10 00:00:00,,,2026-02-10,32838,,11,180,30,Take 1 tablet by mouth twice daily with meals,4132161,,101,1001,metformin 500mg tablet,1503297,oral,mg
+4003,12345,1310149,2026-01-06,2026-01-06 18:00:00,,,2026-07-06,32838,,5,60,30,Take 1 tablet by mouth twice daily,4132161,,103,1002,apixaban 5mg tablet,1310149,oral,mg
+4004,12345,1307046,2026-01-08,2026-01-08 11:00:00,,,2026-07-08,32838,,5,60,30,Take 1 tablet by mouth twice daily,4132161,,102,1003,metoprolol succinate 25mg tablet,1307046,oral,mg

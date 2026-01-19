@@ -1,0 +1,5 @@
+visit_occurrence_id,person_id,visit_concept_id,visit_start_date,visit_start_datetime,visit_end_date,visit_end_datetime,visit_type_concept_id,provider_id,care_site_id,visit_source_value,admitted_from_concept_id,discharged_to_concept_id,preceding_visit_occurrence_id
+1001,12345,9202,2026-01-06,2026-01-06 09:00:00,2026-01-06 09:45:00,2026-01-06 09:45:00,44818518,101,1,ENC-2026-001,,,
+1002,12345,9203,2026-01-06,2026-01-06 14:30:00,2026-01-06 18:30:00,2026-01-06 18:30:00,44818518,103,4,ENC-2026-002,,,1001
+1003,12345,9202,2026-01-08,2026-01-08 10:00:00,2026-01-08 11:00:00,2026-01-08 11:00:00,44818518,102,3,ENC-2026-003,,,1002
+1004,12345,9202,2026-01-15,2026-01-15 14:00:00,2026-01-15 14:45:00,2026-01-15 14:45:00,44818518,101,1,ENC-2026-004,,,1003

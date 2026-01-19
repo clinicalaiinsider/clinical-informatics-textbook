@@ -1,0 +1,46 @@
+table_name,column_name,description,data_type,example_value,omop_cdm_version
+person,person_id,Unique identifier for each person/patient,INTEGER,12345,5.4
+person,gender_concept_id,Concept ID representing gender (8507=Male; 8532=Female),INTEGER,8532,5.4
+person,year_of_birth,Year of birth,INTEGER,1979,5.4
+person,race_concept_id,Concept ID representing race (8527=White),INTEGER,8527,5.4
+person,ethnicity_concept_id,Concept ID for ethnicity (38003563=Hispanic),INTEGER,38003563,5.4
+person,person_source_value,Original patient identifier from source system (MRN),VARCHAR,MRN-2024-78432,5.4
+visit_occurrence,visit_occurrence_id,Unique identifier for each visit/encounter,INTEGER,1001,5.4
+visit_occurrence,visit_concept_id,Type of visit (9202=Outpatient; 9203=ED; 9201=Inpatient),INTEGER,9202,5.4
+visit_occurrence,visit_start_date,Date the visit began,DATE,2026-01-06,5.4
+visit_occurrence,provider_id,Provider responsible for the visit,INTEGER,101,5.4
+visit_occurrence,care_site_id,Location where visit occurred,INTEGER,1,5.4
+condition_occurrence,condition_occurrence_id,Unique identifier for each condition record,INTEGER,2001,5.4
+condition_occurrence,condition_concept_id,SNOMED CT concept ID for the condition,INTEGER,201826,5.4
+condition_occurrence,condition_source_value,Original diagnosis code from source (ICD-10),VARCHAR,E11.9,5.4
+measurement,measurement_id,Unique identifier for each measurement,INTEGER,3001,5.4
+measurement,measurement_concept_id,LOINC concept ID for the measurement type,INTEGER,3004249,5.4
+measurement,value_as_number,Numeric result value,FLOAT,148,5.4
+measurement,unit_concept_id,Concept ID for the unit of measure,INTEGER,8876,5.4
+measurement,measurement_source_value,Original LOINC code from source,VARCHAR,8480-6,5.4
+drug_exposure,drug_exposure_id,Unique identifier for each drug record,INTEGER,4001,5.4
+drug_exposure,drug_concept_id,RxNorm concept ID for the medication,INTEGER,1308216,5.4
+drug_exposure,drug_exposure_start_date,Date medication was started,DATE,2021-05-15,5.4
+drug_exposure,days_supply,Number of days medication was supplied,INTEGER,30,5.4
+drug_exposure,sig,Prescription instructions (signature),VARCHAR,Take 1 tablet by mouth daily,5.4
+procedure_occurrence,procedure_occurrence_id,Unique identifier for each procedure,INTEGER,5001,5.4
+procedure_occurrence,procedure_concept_id,CPT/SNOMED concept ID for procedure,INTEGER,2211360,5.4
+procedure_occurrence,procedure_source_value,Original CPT code from source,VARCHAR,99214,5.4
+observation,observation_id,Unique identifier for each observation,INTEGER,6001,5.4
+observation,observation_concept_id,Concept ID for observation type,INTEGER,40766442,5.4
+observation,value_as_number,Numeric observation value,FLOAT,3,5.4
+observation,value_as_string,Text interpretation,VARCHAR,HIGH,5.4
+observation,observation_source_value,Original observation code/name,VARCHAR,CHA2DS2-VASc,5.4
+note,note_id,Unique identifier for each clinical note,INTEGER,7001,5.4
+note,note_type_concept_id,Type of clinical note,INTEGER,44814637,5.4
+note,note_text,Full text content of the clinical note,TEXT,[Clinical narrative],5.4
+provider,provider_id,Unique identifier for each provider,INTEGER,101,5.4
+provider,provider_name,Name of the healthcare provider,VARCHAR,Dr. Sarah Chen,5.4
+provider,npi,National Provider Identifier,VARCHAR,1234567890,5.4
+provider,specialty_source_value,Provider specialty,VARCHAR,Family Medicine,5.4
+care_site,care_site_id,Unique identifier for each care location,INTEGER,1,5.4
+care_site,care_site_name,Name of the healthcare facility,VARCHAR,Springfield Family Medicine,5.4
+care_site,place_of_service_concept_id,Type of care setting,INTEGER,8940,5.4
+location,location_id,Unique identifier for each location,INTEGER,1,5.4
+location,city,City name,VARCHAR,Springfield,5.4
+location,state,State abbreviation,VARCHAR,IL,5.4

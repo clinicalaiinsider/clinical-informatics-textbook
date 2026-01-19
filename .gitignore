@@ -1,0 +1,94 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Sensitive data (never commit real patient data)
+*.phi
+*_phi.*
+sensitive/
+private/
+
+# Large files
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
+# PostgreSQL
+*.dump
+*.backup
+
+# Test outputs
+test-results/
+coverage/
+.coverage
+htmlcov/
+
+# Documentation builds
+site/
+_build/
+
+# Archive folder (development files not for distribution)
+archive/
+
+# Node.js
+node_modules/
+package-lock.json

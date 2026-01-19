@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 650">
+  <defs>
+    <linearGradient id="icdHeaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="chapterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="blockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="categoryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="icdShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="650" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1100" height="70" fill="url(#icdHeaderGrad)"/>
+
+  <!-- Title -->
+  <text x="550" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">ICD-10-CM Code Structure</text>
+
+  <!-- Format Box -->
+  <g filter="url(#icdShadow)">
+    <rect x="400" y="90" width="300" height="45" rx="8" fill="white" stroke="#ef4444" stroke-width="2"/>
+    <text x="550" y="118" font-family="monospace" font-size="18" font-weight="bold" fill="#dc2626" text-anchor="middle">XXX.XXXX</text>
+  </g>
+  <text x="550" y="155" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">Format: 3-7 alphanumeric characters</text>
+
+  <!-- Position breakdown -->
+  <g transform="translate(50, 180)">
+    <!-- Position headers -->
+    <g font-family="monospace" font-size="14" font-weight="bold">
+      <text x="100" y="0" text-anchor="middle" fill="#374151">1</text>
+      <text x="150" y="0" text-anchor="middle" fill="#374151">2</text>
+      <text x="200" y="0" text-anchor="middle" fill="#374151">3</text>
+      <text x="280" y="0" text-anchor="middle" fill="#6b7280">.</text>
+      <text x="330" y="0" text-anchor="middle" fill="#374151">4</text>
+      <text x="380" y="0" text-anchor="middle" fill="#374151">5</text>
+      <text x="430" y="0" text-anchor="middle" fill="#374151">6</text>
+      <text x="480" y="0" text-anchor="middle" fill="#374151">7</text>
+    </g>
+
+    <!-- Position boxes -->
+    <g transform="translate(0, 15)">
+      <!-- Characters 1-3: Category -->
+      <rect x="75" y="0" width="150" height="40" rx="5" fill="url(#chapterGrad)"/>
+      <text x="150" y="25" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Category (1-3)</text>
+
+      <!-- Character 4 -->
+      <rect x="305" y="0" width="50" height="40" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+      <text x="330" y="18" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">Etiology/</text>
+      <text x="330" y="30" font-family="Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">Location</text>
+
+      <!-- Character 5 -->
+      <rect x="355" y="0" width="50" height="40" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+      <text x="380" y="18" font-family="Arial, sans-serif" font-size="9" fill="#1d4ed8" text-anchor="middle">Severity/</text>
+      <text x="380" y="30" font-family="Arial, sans-serif" font-size="9" fill="#1d4ed8" text-anchor="middle">Episode</text>
+
+      <!-- Character 6 -->
+      <rect x="405" y="0" width="50" height="40" rx="5" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+      <text x="430" y="18" font-family="Arial, sans-serif" font-size="9" fill="#047857" text-anchor="middle">Additional</text>
+      <text x="430" y="30" font-family="Arial, sans-serif" font-size="9" fill="#047857" text-anchor="middle">Specificity</text>
+
+      <!-- Character 7 -->
+      <rect x="455" y="0" width="50" height="40" rx="5" fill="#fce7f3" stroke="#ec4899" stroke-width="1"/>
+      <text x="480" y="18" font-family="Arial, sans-serif" font-size="9" fill="#be185d" text-anchor="middle">Extension</text>
+      <text x="480" y="30" font-family="Arial, sans-serif" font-size="9" fill="#be185d" text-anchor="middle">(injuries)</text>
+    </g>
+  </g>
+
+  <!-- Hierarchy breakdown -->
+  <g transform="translate(600, 180)">
+    <text x="200" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151" text-anchor="middle">Category Hierarchy</text>
+
+    <!-- Chapter -->
+    <g filter="url(#icdShadow)">
+      <rect x="100" y="20" width="200" height="40" rx="8" fill="url(#chapterGrad)"/>
+      <text x="200" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Chapter (A00-Z99)</text>
+    </g>
+
+    <path d="M 200 60 L 200 80" stroke="#667eea" stroke-width="2" fill="none"/>
+
+    <!-- Block -->
+    <g filter="url(#icdShadow)">
+      <rect x="100" y="85" width="200" height="40" rx="8" fill="url(#blockGrad)"/>
+      <text x="200" y="110" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Block (e.g., I30-I52)</text>
+    </g>
+
+    <path d="M 200 125 L 200 145" stroke="#4facfe" stroke-width="2" fill="none"/>
+
+    <!-- Category -->
+    <g filter="url(#icdShadow)">
+      <rect x="100" y="150" width="200" height="40" rx="8" fill="url(#categoryGrad)"/>
+      <text x="200" y="175" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Category (e.g., I48)</text>
+    </g>
+  </g>
+
+  <!-- Maria's Example -->
+  <g filter="url(#icdShadow)">
+    <rect x="50" y="340" width="500" height="180" rx="12" fill="white" stroke="#ef4444" stroke-width="2"/>
+    <rect x="50" y="340" width="500" height="40" rx="12" fill="#fef2f2"/>
+    <text x="300" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#991b1b" text-anchor="middle">Example: Maria's Diabetes Code — E11.65</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="13" fill="#374151" transform="translate(70, 400)">
+    <text y="0"><tspan font-weight="bold" fill="#667eea">E</tspan> = Endocrine, nutritional and metabolic diseases</text>
+    <text y="28"><tspan font-weight="bold" fill="#4facfe">11</tspan> = Type 2 diabetes mellitus</text>
+    <text y="56"><tspan font-weight="bold" fill="#f59e0b">.6</tspan> = With hyperglycemia</text>
+    <text y="84"><tspan font-weight="bold" fill="#10b981">5</tspan> = Additional specificity digit</text>
+  </g>
+
+  <!-- AFib Example -->
+  <g filter="url(#icdShadow)">
+    <rect x="580" y="340" width="470" height="180" rx="12" fill="white" stroke="#ef4444" stroke-width="2"/>
+    <rect x="580" y="340" width="470" height="40" rx="12" fill="#fef2f2"/>
+    <text x="815" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#991b1b" text-anchor="middle">Example: Maria's AFib Code — I48.91</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="13" fill="#374151" transform="translate(600, 400)">
+    <text y="0"><tspan font-weight="bold" fill="#667eea">I</tspan> = Diseases of the circulatory system</text>
+    <text y="28"><tspan font-weight="bold" fill="#4facfe">48</tspan> = Atrial fibrillation and flutter</text>
+    <text y="56"><tspan font-weight="bold" fill="#f59e0b">.9</tspan> = Atrial fibrillation (not flutter)</text>
+    <text y="84"><tspan font-weight="bold" fill="#10b981">1</tspan> = Unspecified (paroxysmal vs persistent)</text>
+  </g>
+
+  <!-- Clinical Note -->
+  <g transform="translate(50, 545)">
+    <rect width="1000" height="85" rx="10" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">Clinical Coding Note:</text>
+    <text x="20" y="48" font-family="Arial, sans-serif" font-size="11" fill="#374151">ICD-10-CM codes are required for billing and reimbursement. The specificity level (3-7 characters) affects claim adjudication.</text>
+    <text x="20" y="68" font-family="Arial, sans-serif" font-size="11" fill="#374151">In OMOP CDM, ICD-10-CM codes are stored as source concepts (condition_source_value) and mapped to standard SNOMED CT concepts.</text>
+  </g>
+
+</svg>
