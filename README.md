@@ -96,7 +96,7 @@ clinical-informatics-textbook/
         └── (query result screenshots)
 ```
 
-## The Maria Rodriguez Case Study
+## The Patient Case Study
 
 The textbook follows Maria Rodriguez through her clinical journey:
 
