@@ -87,8 +87,7 @@ site/
 _build/
 
 # Archive folder (development files not for distribution)
-archive/*
-!archive/FINAL-DOCS/
+archive/
 
 # Node.js
 node_modules/
